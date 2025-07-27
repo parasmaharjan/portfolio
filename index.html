@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Paras Maharjan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#patents">Patents</a></li>
+          <!-- <li><a href="#teaching">Teaching</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Paras Maharjan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#patents" onclick="toggleMenu()">Patents</a></li>
+          <!-- <li><a href="#teaching" onclick="toggleMenu()">Teaching</a></li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/paras_circle.jpeg" alt="Paras Maharjan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Paras Maharjan</h1>
+        <p class="section__text__p2">Computer Vision Researcher</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ParasMaharjan_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/paras-maharjan-09878126/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/parasmaharjan'"
+          />
+          <img
+            src="./assets/google_scholar.png"
+            alt="My Google Scholar profile"
+            class="icon"
+            onclick="location.href='https://scholar.google.com/citations?user=Uk_az5UAAAAJ&hl=en&oi=ao'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article class="experience-entry">
+                <div class="content-left">
+                  <img src="./assets/atombeam_new.jpg"
+                      alt="Experience icon"
+                      class="heading-icon"/>
+                </div>
+                <div class="content-right">
+                  <h2 class="experience-sub-title">Atombeam Technologies</h2>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">Feb 2024 – July 2025</span>
+                </div>
+                <div class="content-right">
+                  <h3>Intern Research Scientist</h3>
+                  <p>Architected an end-to-end image compression solution utilizing deep learning techniques for complex-valued SAR images, achieving a 28% reduction in inference time.</p><br>
+                  <p>Optimized channel context modeling through feature grouping based on latent energy, leading to a 26.5% BD-rate improvement over VVC/H.266-based SAR image compression.</p>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left"></div>
+                <div class="content-right">
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://patents.google.com/patent/US12224777B1/en'">
+                      Lossy Compression Patent
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://patents.google.com/patent/US12119848B1/en'">
+                      Lossless Compression Patent
+                    </button>
+                  </div>
+                </div> 
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="article-container">
+              <article class="experience-entry">
+                <div class="content-left">
+                  <img src="./assets/Dolby_logo.png"
+                      alt="Experience icon"
+                      class="heading-icon"/>
+                </div>
+                <div class="content-right">
+                  <h2 class="experience-sub-title">Dolby Laboratories</h2>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">May 2022 – Aug 2022</span>
+                </div>
+                <div class="content-right">
+                  <h3>Video Processing Research Intern</h3>
+                  <p>Formulated a local gamma correction algorithm for adaptive face brightness adjustment in video conferencing scenarios.</p><br>
+                  <p>Developed a machine learning-driven technique to determine the optimal tuning parameter for background exposure correction.</p>
+                </div>
+              </article>
+
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">June 2020 – Sept 2020</span>
+                </div>
+                <div class="content-right">
+                  <h3>Image Processing Engineering Intern</h3>
+                  <p>Accelerated real-time sports recognition and image segmentation using deep neural networks, achieving a 3× speedup for sports recognition and a 30% improvement in segmentation.</p>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left"></div>
+                <div class="content-right">
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://patents.google.com/patent/WO2024112375A1/en'">
+                      Face Brightness Patent
+                    </button>
+                  </div>
+                </div> 
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article class="experience-entry">
+                <div class="content-left">
+                  <img src="./assets/Kuaishou.png"
+                      alt="Experience icon"
+                      class="heading-icon"/>
+                </div>
+                <div class="content-right">
+                  <h2 class="experience-sub-title">Kuaichou Technology</h2>
+                </div>
+              </article>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">Jun 2021 - Aug 2021</span>
+                </div>
+                <div class="content-right">
+                  <h3>Research Intern of Image/Video Algorithms</h3>
+                  <p>Constructed a deep neural network for image deblocking and deblurring, leveraging DCT decomposition for enhanced transform-domain processing.</p>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">Sept 2020 - Jan 2021</span>
+                </div>
+                <div class="content-right">
+                  <h3>Research Intern of Image/Video Algorithms</h3>
+                  <p>Implemented deep learning-based image denoising techniques for real-world noisy images.</p><br>
+                  <p>Proposed a dual-input-dual-output network with a dual loss function that processes noisy raw and ISP-processed noisy sRGB images to generate clean sRGB outputs.</p>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left"></div>
+                <div class="content-right">
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://patents.google.com/patent/US11967047B2/en'">
+                      Denoising Patent
+                    </button>
+                  </div>
+                </div> 
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <div class="article-container">
+              <article class="experience-entry">
+                <div class="content-left">
+                  <img src="./assets/Poly.png"
+                      alt="Experience icon"
+                      class="heading-icon"/>
+                </div>
+                <div class="content-right">
+                  <h2 class="experience-sub-title">Poly Inc.</h2>
+                </div>
+              </article>
+              <article class="experience-entry">
+                <div class="content-left">
+                  <span class="date">May 2022 – Aug 2022</span>
+                </div>
+                <div class="content-right">
+                  <h3>Video Processing Research Intern</h3>
+                  <p>Prototyped multi-camera image fusion techniques to improve image quality in real-time applications.</p><br>
+                  <p>Developed an algorithm for multi-camera systems incorporating geometric calibration, image registration (SIFT), parallax correction, and alpha fusion-based blending for seamless video transitions.</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publications'"
+      />
+    </section>
+    <section id="publications">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Publications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dark_image_enhancement.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Improving Extreme Low-Light Image Denoising via Residual Learning</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parasmaharjan/DeepImageDenoising'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/8784972'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/DCTResNet.JPG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>DCTResNet: Transform Domain Image Deblocking for Motion Blur Images</h3>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/9675411'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/LoGSIFT.JPG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3>Fast LoG SIFT Keypoint Detector</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parasmaharjan/Learning_based_LoGSIFT'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/10337661'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/JSTARS-pipeline.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Complex-valued SAR Image Compression: A Novel Approach for Amplitude and Phase Recovery</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parasmaharjan/TSFNet'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/10402686'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/E2E-Paras-Comprehensive.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>End-to-End Compression of Complex-Valued SAR Images</h3>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parasmaharjan/TSFNet'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/10743363'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sar_polarization.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3>Distributed Polarimetric SAR Compression with Joint Deblocking Using Side Information</h3>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/parasmaharjan/TSFNet'"
+              >
+                Github
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/abstract/document/11043923'"
+              >
+                Paper
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="patents">
+      <p class="section__text__p1">Learn About My</p>
+      <h1 class="title">Patents</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Systems and methods for neural network based data compression</h3>
+            <p>US Patent: 12224777</p>
+          </div>
+          <div class="details-container">
+            <h3>Real time discrete cosine transform image and video processing with convolutional neural network architecture</h3>
+            <p>US Patent: 12198304</p>
+          </div>
+          <div class="details-container">
+            <h3>Adaptive face brightness adjustment for images and video</h3>
+            <p>Worldwide Patent: WO2024112375A1</p>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>System and method for learning-based lossless data compression</h3>
+            <p>US Patent: 12119848</p>
+          </div>
+          <div class="details-container">
+            <h3>Methods and devices for joint sensor and pixel domain denoising</h3>
+            <p>US Patent: 11967047</p>
+          </div>
+          <div class="details-container">
+            <h3>Controllable lossy compression system using joint learning</h3>
+            <p>US Patent: 12199643</p>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h3>Upsampling of compressed financial time-series data using a jointly trained Vector Quantized Variational Autoencoder neural network</h3>
+            <p>US Patent: 12229679</p>
+          </div>
+          <div class="details-container">
+            <h3>System and methods for upsampling of decompressed genomic data after lossy compression using a neural network</h3>
+            <p>US Patent: 12224044</p>
+          </div>
+          <div class="details-container">
+            <h3>System and methods for upsampling of decompressed time-series data using a neural network</h3>
+            <p>US Patent: 12068761B1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:paras.maharjan@mail.umkc.edu">paras.maharjan@mail.umkc.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/paras-maharjan-09878126/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#patents">Patents</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <p>Copyright &#169; 2023 Paras Maharjan. All Rights Reserved.</p> -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
